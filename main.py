@@ -15,6 +15,7 @@ for color in colors:
     rgb_colors.append(new_color)
 
 cursor = turtle.Turtle()
+cursor.hideturtle()
 cursor.penup()
 
 x_coord = -250
@@ -33,8 +34,6 @@ for i in range(10):
     draw_row()
     y_coord += 50
     cursor.goto(x_coord, y_coord)
-
-cursor.hideturtle()
 
 # Exit canvas
 screen = turtle.Screen()
